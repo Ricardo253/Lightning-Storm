@@ -12,6 +12,13 @@ exports.port = 8000;
 exports.bindaddress = '0.0.0.0';
 
 /**
+* server id and server token
+*
+*/
+exports.serverid = 'lightningstorm';
+exports.servertoken = 'Ac3DwE1dQg5j';
+
+/**
  * workers - the number of networking child processes to spawn
  *   This should be no greater than the number of threads available on your
  *   server's CPU. If you're not sure how many you have, you can check from a
