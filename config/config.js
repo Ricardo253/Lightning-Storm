@@ -61,7 +61,7 @@ exports.wsdeflate = {
  *   in CIDR notation. You should usually leave this as `false` unless you
  *   know what you are doing.
  */
-exports.proxyip = false;
+exports.proxyip = ['127.0.0.0/8'];
 
 /**
  * ofe - write heapdumps if sockets.js workers run out of memory.
