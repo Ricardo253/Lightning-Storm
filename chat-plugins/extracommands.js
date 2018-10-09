@@ -185,8 +185,7 @@ clearall: function (target, room, user) {
 
 		clearRoom(room);
 	},
-};
-	
+
    gclearall: 'globalclearall',
 	globalclearall: function (target, room, user) {
 		if (!this.can('gdeclare')) return false;
@@ -196,4 +195,5 @@ clearall: function (target, room, user) {
 		}
 		Rooms.rooms.forEach(clearRoom);
 	},
-};	
+};		
+  
