@@ -1,6 +1,6 @@
 /*
-* Originally Gold Server's userlist icons plugin
-* Edited by Lord Haji
+* Icon plugin
+* Should work for now
 */
 'use strict';
 
