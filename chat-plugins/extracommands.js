@@ -177,3 +177,4 @@ exports.commands = {
 		}
 		connection.popup(buffer.join("\n\n"));
 	},
+};
