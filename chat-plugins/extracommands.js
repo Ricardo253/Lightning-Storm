@@ -184,8 +184,9 @@ exports.commands = {
 
 		clearRoom(room);
 	},
-
- gclearall: 'globalclearall',
+};	
+ 
+gclearall: 'globalclearall',
 	globalclearall: function (target, room, user) {
 		if (!this.can('gdeclare')) return false;
 
