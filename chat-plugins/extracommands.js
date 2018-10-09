@@ -177,6 +177,7 @@ exports.commands = {
 		}
 		connection.popup(buffer.join("\n\n"));
 	},
+};	
     
    clearall: function (target, room, user) {
 		if (!this.can('declare')) return false;
