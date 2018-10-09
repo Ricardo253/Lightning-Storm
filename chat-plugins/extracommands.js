@@ -177,16 +177,15 @@ exports.commands = {
 		}
 		connection.popup(buffer.join("\n\n"));
 	},
-};
-
-clearall: function (target, room, user) {
+    
+   clearall: function (target, room, user) {
 		if (!this.can('declare')) return false;
 		if (room.battle) return this.sendReply("You cannot clearall in battle rooms.");
 
 		clearRoom(room);
 	},
 
-   gclearall: 'globalclearall',
+ gclearall: 'globalclearall',
 	globalclearall: function (target, room, user) {
 		if (!this.can('gdeclare')) return false;
 
@@ -196,4 +195,3 @@ clearall: function (target, room, user) {
 		Rooms.rooms.forEach(clearRoom);
 	},
 };		
-  
