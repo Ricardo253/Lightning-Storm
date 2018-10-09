@@ -71,7 +71,7 @@ exports.commands = {
 			updateIcons();
 			this.sendReply("You removed " + target[0] + "'s icon.");
 			Rooms('staff').add(user.name + " removed " + target[0] + "'s icon.").update();
-			this.privateModCommand("(" + target[0] + "'s icon was removed by " + user.name + ".)");
+			this.privateModAction("(" + target[0] + "'s icon was removed by " + user.name + ".)");
 			if (Users(target[0]) && Users(target[0]).connected) Users(target[0]).popup(user.name + " removed your icon.");
 			return;
 		}
