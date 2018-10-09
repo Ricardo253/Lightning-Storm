@@ -1,6 +1,6 @@
 /*
 * Icon plugin
-* Should work for now
+* Now fixed
 */
 'use strict';
 
