@@ -316,10 +316,8 @@ const commands = {
 			'LC Uber': 40,
 			'LC': 40,
 		};
-		let tier = template.tier;
-		if (tier[0] === '(') tier = tier.slice(1, -1);
-		if (!(tier in boosts)) return this.sendReply(`|html|${Chat.getDataPokemonHTML(template)}`);
-		let boost = boosts[tier];
+		if (!(template.tier in boosts)) return this.sendReply(`|html|${Chat.getDataPokemonHTML(template)}`);
+		let boost = boosts[template.tier];
 		let newStats = Object.assign({}, template.baseStats);
 		for (let statName in template.baseStats) {
 			// @ts-ignore
