@@ -887,7 +887,27 @@ let Formats = [
 		ruleset: ['Pokemon', 'Standard'],
 	},
 	{
-		name: "[Gen 1] Challenge Cup",
+		name: "[Gen 7] Random Haxmons",
+
+		team: 'random',
+		ruleset: ['[Gen 7] OU', 'Freeze Clause'],
+		banlist: ["King's Rock", 'Razor Fang', 'Stench'],
+		onModifyMovePriority: -100,
+		onModifyMove: function(move) {
+			if (move.accuracy !== true && move.accuracy < 100) move.accuracy = 0;
+			move.willCrit = true;
+			if (move.secondaries) {
+				for (var i = 0; i < move.secondaries.length; i++) {
+					move.secondaries[i].chance = 100;
+				}
+			}
+		}
+	},
+	{
+		
+		
+		
+	  name: "[Gen 1] Challenge Cup",
 
 		mod: 'gen1',
 		team: 'randomCC',
