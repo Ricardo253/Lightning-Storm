@@ -890,7 +890,7 @@ let Formats = [
 		name: "[Gen 7] Random Haxmons",
 
 		team: 'random',
-		ruleset: ['[Gen 7] OU', 'Freeze Clause'],
+		ruleset: ['[Gen 7] OU'],
 		banlist: ["King's Rock", 'Razor Fang', 'Stench'],
 		onModifyMovePriority: -100,
 		onModifyMove: function(move) {
