@@ -4,7 +4,7 @@ const fs = require('fs');
 const color = require('../config/color');
 
 let adWhitelist = (Config.adWhitelist ? Config.adWhitelist : ['lightningstorm.psim.us']);
-let bannedMessages = (Config.bannedMessages ? Config.bannedMessages : ['psim.us']);
+let bannedMessages = (Config.bannedMessages ? Config.bannedMessages : []);
 let adRegex = new RegExp("(play.pokemonshowdown.com\\/~~)(?!(" + adWhitelist.join('|') + "))", "g");
 
 Config.chatfilter = function (message, user, room, connection) {
